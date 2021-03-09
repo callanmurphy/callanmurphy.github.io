@@ -21,6 +21,21 @@
  <body>
  	<h1>Library System</h1>
  	<p>Library circulation system.</p>
- 	<script type="text/javascript" src="e2_library.js"></script>
+  <div id="eventbrite-widget-container-142352438977"></div>
+  <script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+  <script type="text/javascript">
+  var exampleCallback = function() {
+      console.log('Order complete!');
+  };
+  window.EBWidgets.createWidget({
+      // Required
+      widgetType: 'checkout',
+      eventId: '142352438977',
+      iframeContainerId: 'eventbrite-widget-container-142352438977',
+      // Optional
+      iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+      onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+  });
+  </script>
  </body>
 </html>
