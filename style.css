@@ -5,7 +5,17 @@ body {
 	/* margin-left: 20px; */
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	margin-top: 100px;
-	padding: 30px;
+}
+
+h1, h2, h3, h4, h5, h6, p, b {
+	margin-left: 20%;
+    margin-right: 20%;
+	line-height: 2em;
+}
+
+.center {
+	text-align: center;
+	justify-content: center;
 }
 
 /* #header-container {
@@ -27,7 +37,7 @@ body {
 #header-title {
 	float: left;
 	padding-left: 30px;
-	padding-top: 5px;
+	margin-top: 25px;
 	font-size: 20px;
 	overflow: hidden;
 	/* vertical-align: middle; */
